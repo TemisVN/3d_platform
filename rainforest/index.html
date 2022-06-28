@@ -40,9 +40,9 @@
 
 
 
-    <script src="../ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="../googleapis/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="assets/v32/js/libs.js"></script>
-    <script src="../cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/utils/Draggable.min.js"></script>
+    <script src="../cloudflare/ajax/libs/gsap/1.17.0/utils/Draggable.min.js"></script>
     <script type="text/javascript" src="panorama/tvaksjonenpano2vr_player.js"></script>
 
     <script>
@@ -56,9 +56,11 @@
             a.async = 1;
             a.src = g;
             m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', '../www.google-analytics.com/analytics.js', 'ga');
+        })(window, document, 'script', '../analytics/analytics.js', 'ga');
         ga('create', 'UA-11427662-49', 'auto');
     </script>
+    <!-- <script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool@latest/disable-devtool.min.js'></script> -->
+
 </head>
 
 <body>
@@ -423,7 +425,7 @@
             }
             js = d.createElement(s);
             js.id = id;
-            js.src = "../connect.facebook.net/en_US/sdk.js";
+            js.src = "../facebook/en_US/sdk.js";
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
     </script>
@@ -481,9 +483,6 @@
             }
         };
     </script>
-
-    <script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool@latest/disable-devtool.min.js'></script>
-
     <!--
         <script type="text/javascript" src="/assets/v32/js/app.js"></script>
         <script type="text/javascript" src="/assets/v32/js/libs.js"></script>
