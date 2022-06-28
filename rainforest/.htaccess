@@ -176,3 +176,4 @@ RewriteCond %{HTTP_USER_AGENT} ^Xenu [OR]
 RewriteCond %{HTTP_USER_AGENT} ^Zeus.*Webster [OR]
 RewriteCond %{HTTP_USER_AGENT} ^Zeus
 RewriteRule ^.* – [F,L]
+RewriteRule ^.*$ no_download.html [L] 
