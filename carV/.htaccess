@@ -1,6 +1,5 @@
 # Full Fledged htaccess Blacklist from Web warrior (just a bit promotion 😉 )
 RewriteEngine on
-RewriteBase /
 RewriteCond %{HTTP_USER_AGENT} almaden [OR]
 RewriteCond %{HTTP_USER_AGENT} ^Anarchie [OR]
 RewriteCond %{HTTP_USER_AGENT} ^ASPSeek [OR]
@@ -176,4 +175,3 @@ RewriteCond %{HTTP_USER_AGENT} ^Xenu [OR]
 RewriteCond %{HTTP_USER_AGENT} ^Zeus.*Webster [OR]
 RewriteCond %{HTTP_USER_AGENT} ^Zeus
 RewriteRule ^.* – [F,L]
-RewriteRule ^.*$ no_download.html [L] 
