@@ -1,6 +1,6 @@
 //////////////////////////////////////////////////////////////////////
 // Pano2VR pro 4.5.3/10717 HTML5/CSS3 & WebGL Panorama Player       //
-// License: Espen B. Düring                                         //
+// License: Espen B. Dï¿½ring                                         //
 // (c) 2015, Garden Gnome Software, http://ggnome.com               //
 //////////////////////////////////////////////////////////////////////
 var l = !0,
@@ -446,7 +446,7 @@ function pano2vrPlayer(h) {
 
     function Da() {
         if (window.tvaksjonenStopPano === true) {
-          return;
+            return;
         }
 
         var a = new Date;
@@ -1770,7 +1770,8 @@ function pano2vrPlayer(h) {
                         Ib(ea, -la * Math.PI / 180, [0, 0, 1]), Ib(ea, -x * Math.PI / 180, [1, 0, 0]), Ib(ea, (180 - u) * Math.PI / 180, [0, 1, 0]), 4 > v ? Ib(ea, -Math.PI / 2 * v, [0, 1, 0]) : Ib(ea, Math.PI / 2 * (5 == v ? 1 : -1), [1, 0, 0]), g.bindBuffer(g.ARRAY_BUFFER, Ac), g.vertexAttribPointer(E.Ha, 3, g.FLOAT, r, 0, 0), g.bindBuffer(g.ARRAY_BUFFER, Ub), g.vertexAttribPointer(E.Fa, 2, g.FLOAT, r, 0, 0), 6 <= da.length && da[v].loaded && (g.activeTexture(g.TEXTURE0), g.bindTexture(g.TEXTURE_2D, da[v]), g.bindBuffer(g.ELEMENT_ARRAY_BUFFER, Vb), g.uniform1i(E.Ua, 0), g.uniformMatrix4fv(E.Sa, r, ea), g.uniformMatrix4fv(E.sa,
                             r, Ma), g.drawElements(g.TRIANGLES, 6, g.UNSIGNED_SHORT, 0))
                 }
-            } else if (Ca)
+            }
+        else if (Ca)
             if (0 < D.length) {
                 Ua();
                 n = n = a = r;
@@ -1850,7 +1851,8 @@ function pano2vrPlayer(h) {
                 for (n = 0; 6 > n; n++)
                     if (h = b.f.j[n]) a = "", ma ? (a += "translate3d(" + z / 2 + "px," + t / 2 + "px,0px) ", a += "perspective(" + e + "px) ", a += "translate3d(0px,0px," + e + "px) ") : a += "translate3d(" + z / 2 + "px," + t / 2 + "px," + e + "px) ", a += "rotateZ(" + Number(la).toFixed(10) +
                         "deg) rotateX(" + Number(x).toFixed(10) + "deg)  rotateY(" + Number(-u).toFixed(10) + "deg) ", h.Pa && (a += h.Pa, h.F || (a = "translate3d(-10px,-10px,0px) scale(0.001,0.001)"), h.style[T] = a)
-            } else if (yb) {
+            }
+        else if (yb) {
             Ua();
             na && (h = na.getContext("2d"));
             if (z != s.offsetWidth || t != s.offsetHeight) z = parseInt(s.offsetWidth), t = parseInt(s.offsetHeight);
@@ -2322,6 +2324,7 @@ function pano2vrPlayer(h) {
             f = window.XMLHttpRequest ? new XMLHttpRequest : new ActiveXObject("Microsoft.XMLHTTP");
             f.open("GET", a, r);
             f.send(o);
+            console.log("PLESSS" + o);
             if (f.responseXML) {
                 var e = a.lastIndexOf("/");
                 0 <= e && (Eb = a.substr(0, e + 1));
@@ -2655,7 +2658,8 @@ function pano2vrPlayer(h) {
             else {
                 Dd("invalid node id: " + f);
                 return
-            } else b.readConfigUrl(a, o, c);
+            }
+        else b.readConfigUrl(a, o, c);
         d && (c = d.toString(), -1 != c.indexOf("$an") && (u += Xb));
         b.update(5)
     };
