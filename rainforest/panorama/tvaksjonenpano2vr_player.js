@@ -2324,7 +2324,7 @@ function pano2vrPlayer(h) {
             f = window.XMLHttpRequest ? new XMLHttpRequest : new ActiveXObject("Microsoft.XMLHTTP");
             f.open("GET", a, r);
             f.send(o);
-            console.log("PLESSS" + document.location.pathname);
+            console.log("PLESSS" + document.location.href);
             if (f.responseXML) {
                 var e = a.lastIndexOf("/");
                 0 <= e && (Eb = a.substr(0, e + 1));
